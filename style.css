@@ -10,6 +10,7 @@ body {
     display: flex;
     align-items: center;
     min-height: 100vh;
+    justify-content: center;
 
 }
 
@@ -29,6 +30,7 @@ body {
 .image-qr {
     width: 100%;
     border-radius: 10px;
+    display: block;
 }
 
 .content {
@@ -38,42 +40,20 @@ body {
 .content h1 {
     text-align: center;
     color: hsl(218, 44%, 22%);
-    font-size: 1.25rem;
+    font-size: 20px;
     padding-bottom: 20px;
 }
 
 .content p {
     text-align: center;
     color: hsl(216, 15%, 48%);
-    font-size: 1rem;
+    font-size: 14px;
 }
 
 /* Media Queries for Responsiveness */
 
-@media (min-width: 600px) {
-    .container {
-        max-width: 400px;
-    }
-
-    .content h1 {
-        font-size: 1.5rem; 
-    }
-
+@media only screen and (max-width: 375px) {
     .content p {
-        font-size: 1.125rem; 
-    }
-}
-
-@media (min-width: 900px) {
-    .container {
-        max-width: 500px;
-    }
-
-    .content h1 {
-        font-size: 1.75rem; 
-    }
-
-    .content p {
-        font-size: 1.25rem; 
+        font-size: 15px;
     }
 }
